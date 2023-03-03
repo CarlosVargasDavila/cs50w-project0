@@ -1,0 +1,80 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.nav-bar{
+    display: flex;
+    position: relative;
+    background-color: #F1F9F6;
+    padding: 25px;
+    align-items: flex-start;
+
+}
+
+.nav-bar a {
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    text-decoration: none;
+}
+
+body {
+    background: #ff0084;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D1EEE1, #0CDDD3;);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D1EEE1, #0CDDD3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+a:visited {
+    color: #3A5795;
+}
+
+a:hover {
+    color: #bd0c7f;
+}
+
+a:link {
+    color: #F1099F;
+}
+
+ul li {
+    list-style: none;
+}
+
+#titulo {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding: 20px;
+        color: #7D487A;
+        text-align: center;
+}
+.row{
+    --bs-gutter-x: 0 !important;
+}
+.card:hover{
+    box-shadow: 0 6px 12px 0 rgb(179, 214, 0);
+    transform: translateY(-3%);
+} 
+.card img{
+    height: 200px;
+    object-fit: cover;
+    background-position: 0% 0%;
+}
+@media (max-width: 576px) {
+    .card{
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media (min-width: 576px){
+    .card{
+        margin-left: 20%;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+

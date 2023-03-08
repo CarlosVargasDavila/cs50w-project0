@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap');
 *{
     padding: 0px;
     margin: 0px;
@@ -87,13 +88,17 @@ ul li {
     }
     
 }
-
 @media (min-width: 576px){
     .card{
         margin-left: 20%;
         margin-bottom: 30px;
     }
-}
+
+        
+    }
+
+
+
 
 .pie{
     width: 100%;
@@ -200,6 +205,32 @@ figure img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#titulo_personajes{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-weight: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #bd0c7f;
+}
+
+.encabezado_tabla{
+    font-family: 'Shantell Sans', cursive;
+    color:  #fa8072;
+    font-size: 25px;
+}
+
+
+.datos_tabla{
+    font-family: 'Shantell Sans', cursive;
+    color:  #7fff00;
+    font-size: 20px;
+}
+
+.table{
+    background: url(images/Personajes/tabla.jpg);
 }
 
 

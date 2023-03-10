@@ -5,7 +5,8 @@
   margin: 0px;
 }
 
-.nav-bar, ul {
+.nav-bar,
+ul {
   display: flex;
   position: relative;
   background-color: #F1F9F6;
@@ -97,41 +98,24 @@ ul li {
 }
 .pie {
   width: 100%;
-  background-color: #BE6DB7;
+  background: #C04848;
+  background: linear-gradient(to right, #480048, #C04848);
+  box-sizing: border-box;
 }
-
 .pie .grupo-1 {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
-  padding: 45px 0px;
-}
-
-.pie .grupo-1 .box figure {
-  width: 100%;
-  height: 100%;
-  display: flex;
+  grid-gap: 10px;
+  box-sizing: border-box;
+  text-align: center;
   justify-content: center;
-  align-items: center;
+  padding: 15px 10px;
+  background: #C04848;
+  background: linear-gradient(to right, #480048, #C04848);
 }
-
-.pie .grupo-1 .box figure image {
-  width: 250px;
-}
-
-.pie .grupo-1 .box h2 {
-  margin-bottom: 25px;
-  font-size: 20px;
-}
-
-.pie .grupo-1 .box p {
-  color: #D1EEE1;
-  margin-bottom: 10px;
-}
-
 .pie .grupo-1 .redes-sociales a {
   display: inline-block;
   text-decoration: none;
@@ -143,13 +127,55 @@ ul li {
   background-color: #0D2033;
   text-align: center;
 }
+.pie .grupo-1 .box p {
+  color: #D1EEE1;
+  margin-bottom: 10px;
+}
+.pie .grupo-1 .box h2 {
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie .grupo-1 .box .figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie .grupo-1 .box .figure image {
+  width: 250px;
+}
 
 .pie .grupo-1 {
-  display: flex;
   text-align: center;
   justify-content: center;
   padding: 15px 10px;
   background-color: #7D487A;
+  box-sizing: border-box;
+}
+
+.derechos {
+  display: grid;
+  place-items: center;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.grupo-1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -10px;
+}
+
+.box {
+  padding: 0 10px;
+}
+
+#img-fo {
+  margin-left: 20px;
 }
 
 .imagen-icon {
@@ -175,7 +201,7 @@ figure img {
   margin-bottom: 5px;
   text-align: center;
   font-family: "Roboto Mono", monospace;
-  color: #BE6DB7;
+  color: #bd0c7f;
 }
 
 .gallery {
@@ -212,7 +238,7 @@ figure img {
 
 .encabezado_tabla {
   font-family: "Shantell Sans", cursive;
-  color: #fa8072;
+  color: #bd0c7f;
   font-size: 25px;
 }
 
@@ -224,4 +250,40 @@ figure img {
 
 .table {
   background: url(images/Personajes/tabla.jpg);
+  margin: 20px 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .table {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
+.img {
+  margin-top: 50px;
+  text-align: center;
+}
+.img img {
+  width: 70%;
+}
+
+.informacion {
+  margin-top: 30px;
+  padding: 40px;
+}
+
+#texto-bienvenida {
+  margin-bottom: 20px;
+  margin-top: -5%;
+  color: #302b63;
+}
+
+#texto-pregunta {
+  color: #302b63;
+}
+
+.texto-desarrollo {
+  color: #ec38bc;
 }/*# sourceMappingURL=styles.css.map */

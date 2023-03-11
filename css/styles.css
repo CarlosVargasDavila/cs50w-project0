@@ -95,6 +95,9 @@ ul li {
     width: 100% !important;
     margin-bottom: 20px;
   }
+  .nav-bar, ul {
+    padding: 15px;
+  }
 }
 @media (min-width: 576px) {
   .card {

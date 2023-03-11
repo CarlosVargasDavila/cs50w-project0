@@ -5,6 +5,12 @@ $degradado: linear-gradient(to right, #480048, #C04848);
 $degradado1: -webkit-linear-gradient(to right, #480048, #C04848);
 $colorcito_titulo: #bd0c7f;
 $colorcito_blanco: #D1EEE1;
+/*
+En las lineas 103 y 111 se encuentra el uso del selector @media.
+En la linea 117 esta ell ejemplo del uso de anidamiento.
+En las lineas 234, 263 y 269 estan los ejemplos de herencia.
+
+*/
 
 * {
     padding: 0px;
@@ -55,9 +61,9 @@ ul li {
 
 #titulo {
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;  
     padding: 20px;
-    color: #7D487A;
+    color: $colorcito_titulo;
     text-align: center;
 }
 
@@ -226,11 +232,9 @@ figure img {
 }
 
 #galeria_titulo {
-    margin-top: 20px;
-    margin-bottom: 5px;
-    text-align: center;
+    @extend #titulo;
+    margin-bottom: 0 !important;
     font-family: 'Roboto Mono', monospace;
-    color: $colorcito_titulo;
 }
 
 .gallery {
@@ -257,17 +261,14 @@ figure img {
 }
 
 #titulo_personajes {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 50px;
+    @extend #titulo;
     font-weight: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: $colorcito_titulo;
 }
 
 .encabezado_tabla {
+    @extend #titulo;
     font-family: 'Shantell Sans', cursive;
-    color: $colorcito_titulo;
     font-size: 25px;
 }
 
